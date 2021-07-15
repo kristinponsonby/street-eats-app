@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_13_163909) do
+ActiveRecord::Schema.define(version: 2021_07_15_142135) do
+
+  create_table "food_trucks", force: :cascade do |t|
+    t.string "name"
+    t.string "url"
+    t.string "image_url"
+    t.string "kind_of_food"
+    t.integer "rating"
+    t.string "yelp_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"

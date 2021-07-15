@@ -21,4 +21,12 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+Food trucks model will have:
+
+* Name
+* URl 
+* Image url 
+* Kind_of_food
+* Price 
+* Rating
+* Gluten_free

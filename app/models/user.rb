@@ -3,7 +3,7 @@ class User < ApplicationRecord
     validates :username, :email, uniqueness: true
     validates :username, :email, presence: true
 
-    def search(location)
+    def self.test(location)
         url = "https://api.yelp.com/v3/businesses/search"
         params = {
           term: "food trucks",

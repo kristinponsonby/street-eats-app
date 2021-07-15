@@ -1,0 +1,2 @@
+class FoodTruck < ApplicationRecord
+end
