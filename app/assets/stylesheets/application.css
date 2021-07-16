@@ -13,3 +13,110 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    color:  #ff69b4;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+    text-align: center;
+  }
+  
+  .card h1 {
+    font-size: 1.25em;
+  }
+  
+  .new_review {
+    margin-left: 30%;
+    min-width: 300px;
+    margin-right: 30%;
+    background-color: #9400ff;
+    border-radius: 20px;
+    margin-bottom: .3em;
+    margin-top: .3em;
+  }
+  
+  
+  input {
+    display: block;
+    margin: .5em auto;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    /* width: 300px;
+    height: 500px; */
+    margin: 10px;
+    background-color: rgb(122, 122, 216);
+    border-radius: 10px;
+  }
+  
+  .card img {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .review {
+    background-color: red;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: .5em;
+    border-radius: 5px;
+    padding: 1em;
+  }
+  
+  .show img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+  textarea {
+    width: 80%;
+    font-size: .8em;
+    height: 6em;
+    border-radius: 10px;
+  }
+  
+  .errors {
+    list-style: none;
+    color: yellow;
+    padding-left: 0;
+  }
+  
+  .field_with_errors {
+    color: red;
+  }
+  
+  .field_with_errors > input {
+    border: solid red 3px;
+  }
+  
+  .flash {
+    max-width: 500px;
+    margin: 1em auto;
+    padding: .25em 0;
+    font-size: .8em;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  
+  .flash.errors {
+    background-color: red;
+  }
+  
+  .flash.notices {
+    background-color: yellow;
+    color: black;
+  }

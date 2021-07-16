@@ -1,0 +1,9 @@
+<h1>Knoxville Food Trucks </h1>
+
+<div class="cards">
+  <% @food_trucks.each do |food_truck| %>
+   <div class="card">
+    <h3><%= link_to food_truck.name, food_truck %><br>
+    <%= link_to(image_tag(food_truck.image_url), food_truck) %>
+ </div>
+    <% end %>
