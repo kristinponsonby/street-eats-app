@@ -1,5 +1,6 @@
 <nav>
   <% if logged_in? %>
+  <%= link_to "All Food Trucks", food_trucks_path %> 
     <%= link_to "Logout", logout_path, method: "delete" %>
       <p>Welcome <%= current_user.username %></p>
   <% else %>

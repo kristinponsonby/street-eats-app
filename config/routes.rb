@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  resources :food_trucks
+  # resources :reviews
+  resources :food_trucks do
+    resources :reviews, only: [:create, :update]
+  end
   resources :users
 
   get "/login", to: "sessions#login", as: "login"
-  post "/create", to: "sessions#create", as: "create"
+  post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#logout", as: "logout"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
