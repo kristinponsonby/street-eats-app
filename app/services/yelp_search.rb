@@ -15,15 +15,16 @@ attr_reader :response, :businesses
   end
 
   def get_food_trucks
-    self.businesses.map do |business|
+    food_truck_ids = self.businesses.map do |business|
         FoodTruck.find_or_create_by(yelp_id: business["id"]) do |food_truck|
             food_truck.name = business["name"]
             food_truck.url = business ["url"]
             food_truck.image_url = business["image_url"]
             food_truck.rating = business["rating"]
             food_truck.rating = business["price"]
-        end
+        end.id
     end
+    FoodTruck.where(id: food_truck_ids)
 end
 
 end 

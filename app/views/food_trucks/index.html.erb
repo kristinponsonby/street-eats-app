@@ -1,5 +1,11 @@
 <h1>Knoxville Food Trucks </h1>
 
+<%= form_tag food_trucks_path, method: :get do%>
+<%= label_tag :name %>
+<%= text_field_tag :name %>
+<%= submit_tag "Search" %>
+   <% end %>
+
 <div class="cards">
   <% @food_trucks.each do |food_truck| %>
    <div class="card">
