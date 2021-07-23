@@ -120,11 +120,61 @@ gluten_free: true,
 vegetarian: true)
 
 
+FoodTruck.create(
+name: "Lobster Dogs",
+schedule: "https://www.facebook.com/LobsterDogsTN/",
+image_url: "https://images.getbento.com/accounts/cd8bc325b057d9b41b5de2609eb9b104/media/QwLMZSDyRSACBUA2SxNu_IMG_20190725_141410_596.jpg?fit=max&w=1800&auto=format,compress",
+kind_of_food: "Seafood, Lobster Rolls",
+gluten_free: true,
+vegetarian: true)
 
+FoodTruck.create(
+name: "Forks Food Truck",
+schedule: "https://www.facebook.com/ForksOnTheRoadKnox/",
+image_url: "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_784,q_75,w_1050/https://assets.simpleviewinc.com/simpleview/image/upload/crm/knoxville/65568087_2389556621131438_5448662633454501888_o0-81d2050a5056a34_81d206c8-5056-a348-3a3d9e99d09d8485.jpg",
+kind_of_food: "American, Sliders, Fries",
+gluten_free: true,
+vegetarian: true)
 
+FoodTruck.create(
+name: "The Donut Theory",
+schedule: "https://www.thedonuttheory.com/calendar",
+image_url: "https://ksr-ugc.imgix.net/assets/032/192/995/c3363637051c8fb71926efc57cdf9b80_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1612036211&auto=format&frame=1&q=92&s=ff22b0ea231904dc23279ac05a1f337e",
+kind_of_food: "Donuts, Coffee",
+gluten_free: true,
+vegetarian: true)
 
+FoodTruck.create(
+name: "The Wooden Spoon",
+schedule: "https://www.facebook.com/thewoodenspoonknox/",
+image_url: "https://bloximages.chicago2.vip.townnews.com/utdailybeacon.com/content/tncms/assets/v3/editorial/d/06/d0608630-5974-11e9-a334-ff448fdae776/5caa5f49d2f2f.image.jpg?resize=1200%2C900",
+kind_of_food: "Dessert, Natural Shaved Ice",
+gluten_free: true,
+vegetarian: true)
 
+FoodTruck.create(
+name: "Artistic Pops",
+schedule: "https://www.facebook.com/artisticpops",
+image_url: "https://scontent-atl3-2.xx.fbcdn.net/v/t1.18169-9/20046457_1793362750690371_4549684231177570280_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=19026a&_nc_ohc=wptjjTRBpUsAX_tcz1r&_nc_ht=scontent-atl3-2.xx&oh=b4be54e1ec8e83cb18ed46bdf4b00b02&oe=60FDEBF5",
+kind_of_food: "Dessert, Popsicles",
+gluten_free: true,
+vegetarian: true)
 
+FoodTruck.create(
+name: "Dale's Fried Pies",
+schedule: "https://www.facebook.com/dalesfriedpies",
+image_url: "https://scontent-atl3-2.xx.fbcdn.net/v/t1.18169-9/563429_371292246311246_630894993_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=24ihrTK3mwIAX986l0E&_nc_ht=scontent-atl3-2.xx&oh=ad99caecd5334f632c7b1092fc60c12a&oe=60FDA31E",
+kind_of_food: "Dessert, Hand Pies",
+gluten_free: false,
+vegetarian: true)
+
+FoodTruck.create(
+name: "Tree Top Coffee",
+schedule: "https://www.treetopcoffeeshop.com/truck-calendar",
+image_url: "https://images.squarespace-cdn.com/content/5744747b59827ebf9a54f7d8/1546825561039-UD06X541RJAIE7E3BWUW/TC+2.jpg?format=1500w&content-type=image%2Fjpeg",
+kind_of_food: "Coffee, Tea",
+gluten_free: false,
+vegetarian: true)
 
 
 

@@ -2,12 +2,12 @@ class CreateFoodTrucks < ActiveRecord::Migration[6.1]
   def change
     create_table :food_trucks do |t|
       t.string :name
-      t.string :url
+      t.string :schedule
       t.string :image_url
       t.string :kind_of_food
-      t.integer :rating
-      t.string :yelp_id
-
+      t.boolean :gluten_free
+      t.boolean :vegetarian
+      
       t.timestamps
     end
   end

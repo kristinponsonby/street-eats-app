@@ -2,6 +2,9 @@ class ReviewsController < ApplicationController
     before_action :set_food_truck
     before_action :set_review, only: [:update]
 
+
+
+     
     def create
         @review = current_user.reviews.build(review_params)
         @review.food_truck = @food_truck 

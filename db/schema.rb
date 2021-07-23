@@ -14,11 +14,11 @@ ActiveRecord::Schema.define(version: 2021_07_16_203505) do
 
   create_table "food_trucks", force: :cascade do |t|
     t.string "name"
-    t.string "url"
+    t.string "schedule"
     t.string "image_url"
     t.string "kind_of_food"
-    t.integer "rating"
-    t.string "yelp_id"
+    t.boolean "gluten_free"
+    t.boolean "vegetarian"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

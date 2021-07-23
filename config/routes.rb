@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :food_trucks do
     resources :reviews, only: [:create, :update]
   end
-  resources :users
+  resources :users 
 
   get "/login", to: "sessions#login", as: "login"
   post "/login", to: "sessions#create"
