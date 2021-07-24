@@ -1,13 +1,10 @@
 <h1>Knoxville Food Trucks </h1>
 
-<%= form_tag food_trucks_path, method: :get do %>
-<%= label_tag :kind_of_food %>
-<%= text_field_tag :kind_of_food, @params["kind_of_food"], placeholder: "tacos" %>
-<%= label_tag :search %>
-<%= text_field_tag :search, @params[:search], placeholder: "Captain Muchachos" %>
-<%= submit_tag "Search" %> 
-   <% end %>
- 
+<%= form_tag food_trucks_path, method: :get do %> 
+  <%= text_field_tag :search_by_name, @params[:name], placeholder: "Ramen Bones" %>
+    <%= submit_tag "Search!" %>
+<% end  %>
+
 <div class="cards">
   <% @food_trucks.each do |food_truck| %>
    <div class="card">

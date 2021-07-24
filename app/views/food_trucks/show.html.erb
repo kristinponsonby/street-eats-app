@@ -1,20 +1,18 @@
 <div class="show">
-<h1><%= link_to @food_truck.name,  @food_truck.schedule %>- Schedule</h1><br>
+<h1>Schedule: <%= link_to @food_truck.name,  @food_truck.schedule %></h1><br>
 <%= image_tag @food_truck.image_url %><br>
 
 </div>
-    <%=  @food_truck.gluten_free %> <%=  @food_truck.vegetarian %>
-<%= form_for [@food_truck, @review] do |f| %>
-<%= render partial: "layouts/errors", locals: {record: @review} %>
-   <%= f.label "leave a Review" %><br>
-  <%= f.text_area :content %>
-  <%= f.submit %>
-<% end %>
+    <p>Cuisine: <%= @food_truck.kind_of_food %>
+    <p>Gluten Free: <%= human_boolean(@food_truck.gluten_free) %></p>  
+    <p> Vegetarian: <%= human_boolean(@food_truck.vegetarian) %> </p>
 
-<div class="cards">
-<%= @food_truck.reviews.each do |review| %>
-<%= render partial: "reviews/review", locals: {review: review} %>
-   <% end %>
-</div>
+<%= form_for [@food_truck, @review] do |f| %>
+   <%= f.label "Title" %><br>
+   <%= f.text_area :title %><br>
+   <%= f.label "Review" %><br>
+  <%= f.text_area :content %>
+  <%= f.submit "Leave a Review" %>
+<% end %>
 
 
