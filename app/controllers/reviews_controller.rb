@@ -2,18 +2,20 @@ class ReviewsController < ApplicationController
     before_action :set_food_truck
     before_action :set_review, only: [:update]
 
+    def index
+        @reviews = User.find_by(id: current_user.id).reviews
+    end
 
 
-     
     def create
         @review = current_user.reviews.build(review_params)
-        @review.food_truck = @food_truck 
-            if @review.save
-                redirect_to @food_truck
-            else
-                render :"food_trucks/show"
-            end
-    end
+        @review.food_truck = @food_truck
+        if @review.save
+          redirect_to @food_truck
+        else
+          render :"food_trucks/show"
+        end
+      end
 
     def update
       if @review.update(review_params)
@@ -34,7 +36,7 @@ private
     end
 
     def review_params
-        params.require(:review).permit(:rating, :content)
+        params.require(:review).permit(:title, :content)
     end
 
 end

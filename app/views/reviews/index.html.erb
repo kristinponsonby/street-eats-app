@@ -1,1 +1,7 @@
-<h1>Your Reviews</h1>
+<h2>Your Reviews</h2>
+
+<% @reviews.each do |review| %>
+        <p><%= link_to review.food_truck.name, food_truck_path(review.food_truck) %></p>
+        <p><%= review.content %></p>
+    
+<% end %>

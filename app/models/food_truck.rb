@@ -1,8 +1,10 @@
 class FoodTruck < ApplicationRecord
     has_many :reviews
     has_many :users, through: :reviews
-    scope :search_by_name, -> (name){ where("name LIKE ?", "%#{name}%") }
-
+    scope :kind_of_food, -> (kind_of_food){ where("kind_of_food LIKE ?", "%#{kind_of_food}%") }
+    scope :search, -> (name){where("name LIKE ?", "%#{name}%")}
    
+ 
+
 
 end 

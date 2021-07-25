@@ -8,11 +8,19 @@
     <p> Vegetarian: <%= human_boolean(@food_truck.vegetarian) %> </p>
 
 <%= form_for [@food_truck, @review] do |f| %>
+  <%= render partial: "layouts/errors", locals: {record: @review} %>  
    <%= f.label "Title" %><br>
    <%= f.text_area :title %><br>
    <%= f.label "Review" %><br>
   <%= f.text_area :content %>
-  <%= f.submit "Leave a Review" %>
+  <%= f.submit  %>
 <% end %>
 
-
+<div class="cards">
+  <% @food_truck.reviews.each do |review|%>
+  <div class="review">
+   User: <%= review.user.username %><br>
+   Review: <%= review.content %><br>
+   </div>
+    <% end %>
+</div>

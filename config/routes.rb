@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   # resources :reviews
   resources :food_trucks do
-    resources :reviews, only: [:create, :update]
+    resources :reviews, only: [:create, :update, :index]
   end
   resources :users 
 
+  get "/users/:id", to: "users#show"
+  get "/food_truck_reviews", to: "reviews#index"
   get "/login", to: "sessions#login", as: "login"
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#logout", as: "logout"
