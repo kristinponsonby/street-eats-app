@@ -1,8 +1,8 @@
 class FoodTrucksController < ApplicationController
 
     def index
-        @params = params.permit(:kind_of_food, :search, :sort, :name, :id).to_h
-        @food_trucks = FoodTruck.all
+        @params = params.permit(:kind_of_food, :search).to_h
+        @food_trucks = FoodTruck.filter_by_params(@params)
     end
 
     def show
@@ -12,4 +12,3 @@ class FoodTrucksController < ApplicationController
 
 
 end
-
