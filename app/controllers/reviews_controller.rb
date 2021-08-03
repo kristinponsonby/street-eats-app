@@ -3,7 +3,11 @@ class ReviewsController < ApplicationController
     before_action :set_review, only: [:update]
 
     def index
-        @reviews = User.find_by(id: current_user.id).reviews
+       if @food_truck
+           @reviews = @food_truck.reviews
+       else
+        @reviews = current_user.reviews
+       end
     end
 
 

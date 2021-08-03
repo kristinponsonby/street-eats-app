@@ -25,7 +25,7 @@ vegetarian: true)
 FoodTruck.create(
 name: "Stick in a Box",
 schedule: "https://www.facebook.com/stickinaboxknox/",
-image_url: "https://scontent-atl3-2.xx.fbcdn.net/v/t1.6435-9/32105484_162941494384764_1835016268885786624_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=174925&_nc_ohc=eVsUu1IWG0MAX8dCCDb&_nc_ht=scontent-atl3-2.xx&oh=8e5352d24b6dc9fb8f5780635696ccfd&oe=60FC9B54",
+image_url: "https://d3hbe0kmbam4a5.cloudfront.net/photos/96a0d786-095f-4c0f-b9b4-926b97fa10a0.jpg",
 kind_of_food: "Kabobs, Burgers, Brats",
 gluten_free: true,
 vegetarian: true)
@@ -33,7 +33,7 @@ vegetarian: true)
 FoodTruck.create(
 name: "Knox Wurst",
 schedule: "https://knoxwurst.com/index.php/calendar/",
-image_url: "https://scontent-atl3-2.xx.fbcdn.net/v/t1.18169-9/30582442_150343085799894_4522431624149781745_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=174925&_nc_ohc=OVX8dx4p6K0AX_6m4-r&_nc_ht=scontent-atl3-2.xx&oh=f11f27e272cbca321d54e30ac00ab573&oe=60FBA347",
+image_url: "https://assets.simpleviewinc.com/simpleview/image/upload/crm/knoxville/Knox-Wurst-10-58c4c2ea5056a34_58c4c389-5056-a348-3a22624b21fd293d.png",
 kind_of_food: "German, Brats, Sausages",
 gluten_free: true,
 vegetarian: true)
@@ -57,7 +57,7 @@ vegetarian: true)
 FoodTruck.create(
 name: "Chef Aaron's Creations",
 schedule: "https://www.facebook.com/chefaaronscreations/",
-image_url: "https://scontent-atl3-2.xx.fbcdn.net/v/t1.18169-9/22050122_1340449932743699_2286646362929462126_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=rHjS3pZlwSwAX_8jcu7&_nc_ht=scontent-atl3-2.xx&oh=6637676355d7858c930de9643c2aedd5&oe=60FCB654",
+image_url: "https://d3hbe0kmbam4a5.cloudfront.net/photos/10ea448b-4b38-45f4-a7d3-fb6fc94ab4db.jpg",
 kind_of_food: "American, Burgers, Tacos",
 gluten_free: false,
 vegetarian: false)
@@ -65,7 +65,7 @@ vegetarian: false)
 FoodTruck.create(
 name: "The Weenie Waggin'",
 schedule: "https://www.facebook.com/TheWeenieWaggin/",
-image_url: "https://scontent-atl3-2.xx.fbcdn.net/v/t1.6435-9/68426686_1513688462104195_1325298475138547712_n.png?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=bmIdXLhW8tIAX-4xndL&_nc_ht=scontent-atl3-2.xx&oh=12ca2a27f6cce77a7a2fef56611f8c3e&oe=60FC45AD",
+image_url: "https://d3hbe0kmbam4a5.cloudfront.net/photos/4e614912-eefa-4921-9249-56709050cfc9.jpg",
 kind_of_food: "American, hot dogs",
 gluten_free: true,
 vegetarian: false)
@@ -155,7 +155,7 @@ vegetarian: true)
 FoodTruck.create(
 name: "Artistic Pops",
 schedule: "https://www.facebook.com/artisticpops",
-image_url: "https://scontent-atl3-2.xx.fbcdn.net/v/t1.18169-9/20046457_1793362750690371_4549684231177570280_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=19026a&_nc_ohc=wptjjTRBpUsAX_tcz1r&_nc_ht=scontent-atl3-2.xx&oh=b4be54e1ec8e83cb18ed46bdf4b00b02&oe=60FDEBF5",
+image_url: "https://cdn-az.allevents.in/events3/banners/a8552f061b18cc64838434c5e6c206a607966863d4ef2cce91493088acba016f-rimg-w513-h350-gmir.jpg?v=1591599611",
 kind_of_food: "Dessert, Popsicles",
 gluten_free: true,
 vegetarian: true)
@@ -163,7 +163,7 @@ vegetarian: true)
 FoodTruck.create(
 name: "Dale's Fried Pies",
 schedule: "https://www.facebook.com/dalesfriedpies",
-image_url: "https://scontent-atl3-2.xx.fbcdn.net/v/t1.18169-9/563429_371292246311246_630894993_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=24ihrTK3mwIAX986l0E&_nc_ht=scontent-atl3-2.xx&oh=ad99caecd5334f632c7b1092fc60c12a&oe=60FDA31E",
+image_url: "https://images.squarespace-cdn.com/content/v1/508260b2e4b066390d120cc1/1606936846576-T231MIYS6JC93YGV8W0V/DFP01.jpg",
 kind_of_food: "Dessert, Hand Pies",
 gluten_free: false,
 vegetarian: true)

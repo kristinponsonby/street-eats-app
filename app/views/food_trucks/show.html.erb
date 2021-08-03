@@ -1,12 +1,42 @@
+<div class="hero-image">
+  <div class="hero-text">
+  <h1> <%= @food_truck.name %></h1>
+  </div>
+  </div>
+<br>
+<br>
+<br>
+<div class="review">
 <div class="show">
-<h1>Schedule: <%= link_to @food_truck.name,  @food_truck.schedule %></h1><br>
 <%= image_tag @food_truck.image_url %><br>
-
+<h3>Schedule: <%= link_to @food_truck.name,  @food_truck.schedule %></h3><br>
+  </div>
 </div>
-    <p>Cuisine: <%= @food_truck.kind_of_food %>
-    <p>Gluten Free: <%= human_boolean(@food_truck.gluten_free) %></p>  
-    <p> Vegetarian: <%= human_boolean(@food_truck.vegetarian) %> </p>
+<br>
 
+<div class="details-container">
+  <div class="details-content">
+    Cuisine: <br>
+     <%= @food_truck.kind_of_food %>
+    </div>
+  <div class="details-content">
+    Gluten Free:<br>
+     <%= human_boolean(@food_truck.gluten_free) %>
+</div>
+
+
+<div class="details-content">
+    Vegetarian: <br>
+    <%= human_boolean(@food_truck.vegetarian) %>
+    </div>
+    </div>
+<br>
+<br>
+<br>
+<h1>Leave a Review</h1>
+<br>
+<div class="review-cards">
+  <div class="review-cards-content">
 <%= form_for [@food_truck, @review] do |f| %>
   <%= render partial: "layouts/errors", locals: {record: @review} %>  
    <%= f.label "Title" %><br>
@@ -15,12 +45,16 @@
   <%= f.text_area :content %>
   <%= f.submit  %>
 <% end %>
-
+</div>
+</div>
+<br>
+<h1> All Reviews</h1>
 <div class="cards">
   <% @food_truck.reviews.each do |review|%>
   <div class="review">
-   User: <%= review.user.username %><br>
-   Review: <%= review.content %><br>
+   <h3><%= review.user.username %><br></h3>
+   <%= review.content %><br>
    </div>
     <% end %>
 </div>
+<br>

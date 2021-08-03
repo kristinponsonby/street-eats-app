@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # resources :reviews
+
   resources :food_trucks do
     resources :reviews, only: [:create, :update, :index]
   end
