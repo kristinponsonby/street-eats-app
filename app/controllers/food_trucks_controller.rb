@@ -2,7 +2,11 @@ class FoodTrucksController < ApplicationController
 
     def index
         @params = params.permit(:kind_of_food, :search).to_h
-        @food_trucks = FoodTruck.filter_by_params(@params)
+        if @params
+            @food_trucks = FoodTruck.search(@params[:search])
+        else
+            @food_trucks = FoodTruck.all
+        end
     end
 
     def show
