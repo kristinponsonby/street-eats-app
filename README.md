@@ -2,7 +2,7 @@
 Street Eats is an app for browsing and reviewing all the food trucks in Knoxville, TN. Browse by cuisine or name of the food truck. Find the link to the current schedule for all your favorite trucks or find trucks that offer gluten free or vegetarian options.
 
 
-</h2>Instructions<h2>
+Instructions
 
 Fork and clone this repo to get started. Run bundle install to install all required gems.
 

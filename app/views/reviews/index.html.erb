@@ -1,4 +1,11 @@
-<h2>Your Reviews</h2>
+<div class="hero-image">
+  <div class="hero-text">
+
+<h1>Your Reviews</h1>
+
+</div>
+</div>
+
 
 <% @reviews.each do |review| %>
         <p><%= link_to review.food_truck.name, food_truck_path(review.food_truck) %></p>

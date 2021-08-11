@@ -4,15 +4,10 @@
     <p>All your favorite food trucks in Knoxville, TN</p>
   </div>
 </div>
-<br>
-<br>
 
  <div class="search-bar">
 <%= form_tag food_trucks_path, method: :get do %> 
-  <%= label_tag :Name %>
   <%= text_field_tag :search, @params[:search], placeholder: "Captain Muchachos"%> 
- <%= label_tag :Cuisine %>
-  <%= text_field_tag :kind_of_food, @params[:search], placeholder: "Tacos" %>
   <div class ="button"> <%= submit_tag "Search!" %>
 <% end  %>
 </div>
@@ -23,7 +18,7 @@
 <div class="cards">
   <% @food_trucks.each do |food_truck| %>
    <div class="card">
-    <%= link_to(image_tag(food_truck.image_url), food_truck) %>
-      <h3><%= food_truck.name %><br>
+    <%= link_to(image_tag(food_truck.image_url), food_truck) %><br>
+      <h3><%= link_to(food_truck.name, food_truck, class: "link-primary") %></h3><br>
  </div>
     <% end %>

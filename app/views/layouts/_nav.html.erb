@@ -1,15 +1,16 @@
 <nav>
+
   <% if logged_in? %>
-    <%= link_to "All Food Trucks", food_trucks_path %> 
-    <%= link_to "My Reviews", food_truck_reviews_path(current_user)%> 
-    <%= link_to "My Profile", user_path(current_user) %> 
-    <%= link_to "Logout", logout_path, method: "delete" %>
-      <h2>Welcome <%= current_user.username %></h2>
+    <%= link_to "All Food Trucks", food_trucks_path, class: "link-primary" %> |
+    <%= link_to "My Reviews", food_truck_reviews_path(current_user), class: "link-primary" %> |
+    <%= link_to "My Profile", user_path(current_user), class: "link-primary" %> |
+    <%= link_to "Logout", logout_path, method: "delete", class: "link-primary" %>
+
   <% else %>
-    <%= link_to "All Food Trucks", food_trucks_path %> |
-    <%= link_to "Log in with Google", "/auth/google_oauth2" %> |
-    <%= link_to "Log in", login_path %> |
-    <%= link_to "Sign up", new_user_path %> |
+    <%= link_to "All Food Trucks", food_trucks_path, class: "link-primary" %> |
+    <%= link_to "Log in with Google", "/auth/google_oauth2", class: "link-primary" %> |
+    <%= link_to "Log in", login_path, class: "link-primary"%> |
+    <%= link_to "Sign up", new_user_path, class: "link-primary" %> |
   
 <% end %>
 
